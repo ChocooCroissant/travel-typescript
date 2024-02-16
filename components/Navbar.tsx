@@ -19,7 +19,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
     <nav>
       <div className={`${navbarBackground} flexBetween fixed padding-container w-full z-30 py-5`}>
         <a href="/">
-          <img src="/hilink-logo.svg" alt='logo' width={74} height={29}/>
+          <img src="../public/hilink-logo.svg" alt='logo' width={74} height={29}/>
         </a>
 
         <ul className='hidden h-full gap-12 lg:flex'>

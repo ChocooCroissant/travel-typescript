@@ -40,7 +40,7 @@ const Hero = ({setSelectedPage}: Props) => {
             }}      
         >
             <img
-                src="/camp.svg"
+                src="../public/camp.svg"
                 alt="camp"
                 width={50}
                 height={50}
@@ -66,7 +66,7 @@ const Hero = ({setSelectedPage}: Props) => {
                 <div className="flex items-center gap-2">
                     {Array(5).fill(1).map((_, index) => (
                         <img
-                            src="/star.svg"
+                            src="../public/star.svg"
                             key={index}
                             alt="star"
                             width={24}     

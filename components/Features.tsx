@@ -15,7 +15,7 @@ const Features = ({ setSelectedPage }: Props) => {
         >
           <div className="flex flex-1 lg:min-h-[900px]">
             <img
-              src="/phone.png"
+              src="../public/phone.png"
               alt="phone"
               width={440}
               height={1000}
@@ -26,7 +26,7 @@ const Features = ({ setSelectedPage }: Props) => {
           <div className="z-20 flex w-full flex-col lg:w-[60%]">
             <div className="relative">
               <img
-                src="/camp.svg"
+                src="../public/camp.svg"
                 alt="camp"
                 width={50}
                 height={50}

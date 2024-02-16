@@ -42,7 +42,7 @@ const GetApp = ( { setSelectedPage }: Props) => {
             </div>
             <div className="flex flex-1 items-center justify-end">
                 <img
-                    src="/phones.png"
+                    src="../public/phones.png"
                     alt="phones"
                     width={550}
                     height={870}
