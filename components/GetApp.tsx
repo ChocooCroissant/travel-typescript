@@ -27,14 +27,14 @@ const GetApp = ( { setSelectedPage }: Props) => {
                     <Button
                         type="button"
                         title="App Store"
-                        icon="/apple.svg"
+                        icon="apple.svg"
                         variant="btn_white"
                         full
                     />
                     <Button
                         type="button"
                         title="Play Store"
-                        icon="/android.svg"
+                        icon="android.svg"
                         variant="btn_dark_green_outline"
                         full
                     />
@@ -42,7 +42,7 @@ const GetApp = ( { setSelectedPage }: Props) => {
             </div>
             <div className="flex flex-1 items-center justify-end">
                 <img
-                    src="../public/phones.png"
+                    src="phones.png"
                     alt="phones"
                     width={550}
                     height={870}

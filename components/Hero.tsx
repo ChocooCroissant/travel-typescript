@@ -40,7 +40,7 @@ const Hero = ({setSelectedPage}: Props) => {
             }}      
         >
             <img
-                src="../public/camp.svg"
+                src="camp.svg"
                 alt="camp"
                 width={50}
                 height={50}
@@ -66,7 +66,7 @@ const Hero = ({setSelectedPage}: Props) => {
                 <div className="flex items-center gap-2">
                     {Array(5).fill(1).map((_, index) => (
                         <img
-                            src="../public/star.svg"
+                            src="star.svg"
                             key={index}
                             alt="star"
                             width={24}     
@@ -96,7 +96,7 @@ const Hero = ({setSelectedPage}: Props) => {
                 <Button
                     type="button"
                     title="How we work"
-                    icon="/play.svg"
+                    icon="play.svg"
                     variant="btn_white_text"
                 />
             </div>
@@ -120,7 +120,7 @@ const Hero = ({setSelectedPage}: Props) => {
                 <div className="flex flex-col">
                     <div className="flexBetween">
                         <p className=" regural-16 text-gray-20">Location</p>
-                        <img src="/close.svg" alt="close" width={24} height={24}/>
+                        <img src="close.svg" alt="close" width={24} height={24}/>
                     </div>
                     <p className="bold-20 text-white">Aguas Calientes</p>
                 </div>

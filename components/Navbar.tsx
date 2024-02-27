@@ -14,17 +14,17 @@ type Props = {
 const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
   const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   const navbarBackground = isTopOfPage ? "" : "bg-white drop-shadow";
-  /*drop-shadow fixed top-0 z-30 w-full py-6 */
   return (
     <nav>
       <div className={`${navbarBackground} flexBetween fixed padding-container w-full z-30 py-5`}>
         <a href="/">
-          <img src="../public/hilink-logo.svg" alt='logo' width={74} height={29}/>
+          <img src="hilink-logo.svg" alt='logo' width={74} height={29}/>
         </a>
 
         <ul className='hidden h-full gap-12 lg:flex'>
           {NAV_LINKS.map((link) => (
             <Link
+              key={link.label}
               page={link.label}
               setSelectedPage={setSelectedPage}
               selectedPage={selectedPage}
@@ -36,7 +36,7 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
           <Button
             type='button'
             title='Login'
-            icon='../public/user.svg'
+            icon="user.svg"
             variant="btn_dark_green"
           />
         </div>
@@ -68,12 +68,13 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage}: Props) => {
               <Button
                 type='button'
                 title='Login'
-                icon='../public/user.svg'
+                icon="user.svg"
                 variant="btn_dark_green"
               />
             </div>
             {NAV_LINKS.map((link) => (
               <Link
+                key={link.label}
                 page={link.label}
                 setSelectedPage={setSelectedPage}
                 selectedPage={selectedPage}
